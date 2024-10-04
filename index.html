@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Scoreboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"  />
+        <meta name="author" content="GPQJ"/>
+        <link rel="stylesheet" href="scoreboard.css">
+    </head>
+    <body>
+        <main>
+            <section class="scoreboard">
+                <div class="team-score">
+                    <h2 class="team">HOME</h2>
+                    <p class="score" id="homescore">0</p>
+                    <div class="buttons">
+                        <button class="add-points" id="homeadd1" onclick="updateScore('home', 1)" aria-label="Add 1 point to home score">+ 1</button>
+                        <button class="add-points" id="homeadd2" onclick="updateScore('home', 2)" aria-label="Add 2 points to home score">+ 2</button>
+                        <button class="add-points" id="homeadd3" onclick="updateScore('home', 3)" aria-label="Add 3 points to home score">+ 3</button>
+                    </div>
+                </div>
+                <div class="team-score">
+                    <h2 class="team">GUEST</h2>
+                    <p class="score" id="guestscore">0</p>
+                    <div class="buttons">
+                        <button class="add-points" id="guestadd1" onclick="updateScore('guest', 1)" aria-label="Add 1 point to guest score">+ 1</button>
+                        <button class="add-points" id="guestadd2" onclick="updateScore('guest', 2)" aria-label="Add 2 points to guest score">+ 2</button>
+                        <button class="add-points" id="guestadd3" onclick="updateScore('guest', 3)" aria-label="Add 3 points to guest score">+ 3</button>
+                    </div>
+                </div>
+            </section>
+            <section class="new-game">
+                <button class="restart" onclick ="clearScores()" id="restart" aria-label="Start a new game">NEW GAME</button>
+            </section>
+        </main>
+        <footer class="gpqj-footer">
+            <p class="signature">  GPQJ ❀ 2024 </p>
+        </footer>
+        <script src="scoreboard.js"></script>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+:root {
+	--heading: 3rem;
+	--space: 1rem;
+	--text: #EEEEEE;
+	--primary: #F94F6D;
+	--bg: #1B244A;
+	--highlight: #9AABD8;
+	--corners: 7px;
+	--redborder: 2px solid var(--primary);
+	--blackborder: 2px solid black;
+
+}
+@font-face {
+	font-family: cursed-timer;
+	src: url(font/CursedTimerUlil-Aznm.ttf);
+}
+
+* {
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: var(--bg);
+}
+
+main{
+	min-height: 90vh;
+}
+
+.scoreboard{
+	width: 60%;
+	min-width: 420px;
+	margin: var(--heading) auto;
+	padding: var(--space);
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.team {
+	color: var(--text);
+	font-size: var(--heading);
+	margin: var(--space);
+	
+}
+
+.score {
+	background-color: black;
+	width: 175px;
+	color: var(--primary);
+	font-size: 5rem;
+	font-family: cursed-timer;
+	margin: var(--space);
+	padding: var(--space);
+	border-radius: var(--corners);
+	border: var(--blackborder);
+}
+
+.buttons{
+	padding: var(--space);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.add-points, .restart {
+	cursor: pointer;
+	color: var(--highlight);
+	font-family: cursed-timer;
+	font-size: 1rem;
+	border: 2px solid var(--highlight);
+	border-radius: var(--corners);
+	width: 50px;
+	height: 50px;
+	background: none;
+}
+	.add-points:hover, .restart:hover{
+		background: var(--highlight);
+		color: var(--primary);
+	}
+
+.new-game{
+	display: flex;
+	justify-content: center;
+}
+
+.restart{
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+	padding: var(--space);
+	width: auto;
+	height: auto;
+ 
+}
+	
+.gpqj-footer {
+	font-size: 0.85rem;
+	padding: 2rem;
+	color: var(--text);
+	word-spacing: 0.9rem;
+	letter-spacing: 0.5rem;
+	text-align: center;
+	display: flex;
+	align-content: flex-end;
+	justify-content: center;
+}
