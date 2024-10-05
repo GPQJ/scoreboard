@@ -8,7 +8,7 @@
 	--corners: 7px;
 	--redborder: 2px solid var(--primary);
 	--blackborder: 2px solid black;
-
+	--redshadow: 0 0 6px #FF7F8A;
 }
 @font-face {
 	font-family: cursed-timer;
